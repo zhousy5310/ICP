@@ -7,18 +7,7 @@ import Int "mo:base/Int";
 
 actor {
     func quicksort(xs : [var Int]){
-    var n = 0;
-    while (n < xs.size()){
-        Debug.print(Int.toText(xs[n]));
-        n += 1;
-    };
-    Debug.print("Running quick sort now!");
     qs(xs, 0, xs.size()-1);
-    n -= n;
-    while (n < xs.size()){
-        Debug.print(Int.toText(xs[n]));
-        n += 1;
-    };
     };
 
     func qs(xs : [var Int], lo : Int, hi : Int) : (){
